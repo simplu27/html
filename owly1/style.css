@@ -1,0 +1,63 @@
+/* Style for owl carousel proba */
+
+body {
+	font-family: Arial, sans-serif;
+	padding: 0 20px;
+	/*background: #38383A;*/
+}
+
+h2 {color: #DF7A29;}
+
+.center {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px 10px 20px 20px;
+	background: #EFEFEF;
+	color: #FB0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul, li {margin: 0;padding: 0;}
+
+.carousel li {
+	display: block;
+	background: #FFF;
+	margin-right: 10px;
+	min-height: 180px;
+	/*padding: 12px;*/
+	box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+	overflow: hidden;
+}
+
+.carousel img {
+	opacity: .8;
+	transition: opacity .6s;
+}
+
+.carousel li:hover img {
+	opacity: 1;
+}
+
+.carousel h3 {
+	font-size: 14px;
+	text-align: center;
+	font-weight: normal;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.carousel a {
+	color: #4F4836;
+	text-decoration: none;
+}
+
+.carousel li:hover a,
+.carousel a:hover {
+	color: #9F7400;
+	text-decoration: underline;
+}
