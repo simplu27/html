@@ -1,0 +1,53 @@
+/* CSS for Carousel 2 Test */
+
+body {
+	font-size: 14px;
+	line-height: 21px;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {max-width: 100%; height: auto;}
+
+.center-carousel {
+	max-width: 800px;
+	margin: 20px auto 30px;
+	padding: 0 20px;
+}
+
+/* Basic clearfix */
+.clearfix:after,
+.cf:after {
+	content: ".";  display: block;  
+	height: 0;  clear: both;  visibility: hidden;
+}  
+.clearfix, .cf {display: inline-block;}
+* html .clearfix, * html .cf { height: 1%;}  
+.clearfix, .cf {display: block;}
+
+/* Basic styling for carousel items */
+
+.item {
+	max-width: 33.333%;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
