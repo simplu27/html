@@ -5,12 +5,14 @@
 <title>Owl Carousel 2</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" media="screen" href="_css/style.css">
+<link rel="stylesheet" media="screen" href="_css/owlCarousel.css">
 </head>
 <body>
 
 
 <div class="center-carousel clearfix">
-	<div id="car2" class="owl-carousel">
+	<!-- .owl-carousel si owl-theme sunt obligatorii -->
+	<div id="car2" class="owl-carousel owl-theme">
 
 		<div class="item">
 			<a href="#">
@@ -60,6 +62,43 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quod omnis dolor nesciunt blanditiis modi ex accusantium veritatis consequatur, aperiam, cumque at sapiente sequi magni libero quibusdam consectetur fugit. Officiis, quae, eius. Quisquam minima omnis porro voluptates quo doloremque explicabo praesentium suscipit, nobis, tempore qui, autem consequuntur perspiciatis blanditiis enim.</p>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="_js/owlCarousel.js"></script>
+<script>
+	$(document).ready(function(){  
+	
+		$(document).ready(function(){
+			$('.owl-carousel').owlCarousel({
+				margin: 10,
+				loop: true,
+				nav: true,
+				dots: true,
+				responsiveClass:true,
+				    responsive:{
+				        0:{
+				            items:1,
+				            nav:true
+				        },
+				        400:{
+				            items:2,
+				            nav:true
+				        },
+				        600:{
+				            items:3,
+				            nav:false
+				        },
+				        1000:{
+				            items:4,
+				            nav:true,
+				            loop:false
+				        }
+				    },
+				responsiveRefreshRate: 50
+			});
+		});
+	
+	});  //end document ready
+</script>
 
 </body>
 </html>

@@ -35,16 +35,9 @@ img {max-width: 100%; height: auto;}
 /* Basic styling for carousel items */
 
 .item {
-	max-width: 33.333%;
-	float: left;
+	/*max-width: 33.333%;
+	float: left;*/
 }
-
-
-
-
-
-
-
 
 
 
