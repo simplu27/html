@@ -1,0 +1,75 @@
+/*Styles for Temp1*/
+
+/* ================================================
+	CUSTOM STYLES
+=================================================== */
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #545454;
+}
+
+#header,
+#content,
+#footer {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+
+.menu-icon {
+	font-size: 26px;
+	text-align: right;
+}
+
+
+/*FOOTER*/
+
+#footer a {
+	color: #F9F9F9;
+	opacity: .6;
+}
+
+#footer a:hover {
+	color: #F9F9F9;
+	opacity: 1;
+}
+
+#copyright {
+	background: #313455;
+	color: #A3A7C9;
+	text-align: center;
+	font-size: 13px;
+	padding: 15px 20px;
+}
+
+#copyright p {
+	opacity: .9;
+}
+
+li.social-icons {
+	font-size: 40px;
+	line-height: 44px;
+	display: inline-block;
+	margin: 20px;
+	padding: 10px;
+}
+
+li.social-icons span {
+	display: block;
+	margin: 8px;
+}
+
+li.social-icons a {outline: none;}
+
+#footer h4 {
+	font-weight: 600;
+	color: #F9F9F9;
+	text-transform: uppercase;
+	letter-spacing: normal;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
