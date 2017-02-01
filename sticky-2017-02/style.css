@@ -1,0 +1,165 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+html{overflow-y:scroll;}
+body{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+a{background-color:transparent}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:700}
+dfn{font-style:italic}
+h1{font-size:2em;margin:.67em 0}
+mark{background:#ff0;color:#000}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}sub{bottom:-.25em}
+img{border:0;max-width: 100%; height: auto;}
+svg:not(:root){overflow:hidden}
+figure{margin:1em 40px}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+pre{overflow:auto}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button{overflow:visible}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}
+input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+textarea{overflow:auto}
+optgroup{font-weight:700}
+table{border-collapse:collapse;border-spacing:0}
+td,th{padding:0}
+/*Normalize*/
+
+/*! HTML5 Boilerplate v5.0.0 | MIT License | https://html5boilerplate.com/ */
+html {color: #222; font-size: 1em; line-height: 1.4; }
+::-moz-selection {background: #b3d4fc; text-shadow: none; }
+::selection {background: #b3d4fc; text-shadow: none; }
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+audio, canvas, iframe, img, svg, video {vertical-align: middle; }
+fieldset {border: 0; margin: 0; padding: 0; }
+textarea {resize: vertical; }
+/* Helper class */
+.hidden {display: none !important; }
+.visuallyhidden {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.invisible {visibility: hidden; }
+/* Clearfix */
+.clearfix:before, .clearfix:after {content: " "; display: table; }
+.clearfix:after {clear: both; }
+/* Box sizing */
+*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* Media screen */
+@media screen and (max-width: 940px) {}
+
+/* ================================================
+	CUSTOM STYLES from HERE
+=================================================== */
+
+.center {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+#st1 {
+	background: blue;
+	color: white;
+}
+
+.center2 {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 0 20px;
+}
+
+.center2 ul,
+.center2 li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.center2 .logo {
+	display: inline-block;
+}
+
+.center2 ul {
+	display: block;
+	float: right;
+}
+
+.center2 li {
+	display: inline-block;
+}
+
+.center2 li a,
+.logo {
+	height: 50px;
+	line-height: 50px;
+	display: block;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	transition: all .5s;
+}
+
+.big-image {
+	width: 100%;
+	display: block;
+	/*min-height: 550px;*/
+	/*padding: 100px 0;*/
+	background: url(big.jpg) no-repeat center center fixed;
+	background-size: cover;.
+}
+
+h1 {
+	margin: 0;
+	text-align:center;
+	padding: 250px 0;
+	background: rgba(220, 20, 60, .4);
+}
+
+@media screen and (max-width: 640px) {
+
+	.logo {
+		font-size: 18px;
+		width: 100%;
+		text-align: center;
+	}
+
+
+
+} /* 640px media end */
+
+.center2 li a {
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 6px;
+}
+
+.center2 li a:hover {
+	background: #333;
+}
+
+.is-sticky #st1 {
+	opacity: .8;
+	transition: all .5s;
+}
+
+.is-sticky #st1:hover {
+	opacity: 1;
+}
+
