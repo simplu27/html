@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Center content with flexbox</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="style.css">
+<style>
+	#center-wrap {
+		min-height: 600px;
+		padding: 20px;
+		background: gray;
+		margin: 20px;
+		display: flex;
+		display: -ms-flexbox;
+		-ms-flex-pack: center;
+		align-items: center;
+		justify-content: center;
+		-ms-flex-align:center;
+	}
+	
+	.box-center {
+		background: #FFF;
+		max-width: 80%;
+		padding: 20px;
+		border-radius: 4px;
+	}
+	
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div id="center-wrap" class="container">
+		<div class="box-center">
+			<h2>Sunt centrat vertical si orizontal</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptates, aliquam, officia mollitia asperiores similique. Error sit quasi quae odit?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptates, aliquam, officia mollitia asperiores similique. Error sit quasi quae odit?</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>2 coloane pe rand</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="style.css">
+<style>
+	/* container-1 2 coloane pe rand */
+	.container-1 {
+		background: gray;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.box-1 {
+		border: 1px solid #DFDFDF;
+		padding: 10px;
+		background: white;
+		align-items: center;
+		/*margin: 10px;*/
+		/*flex-grow: 1;*/
+		width: 48%;
+		margin-bottom: 10px;
+		margin-right: 4%;
+	}
+
+	.box-1:first-child {
+		border-color: red;
+	}
+
+	.box-1:nth-child(2n+2) {
+		background: pink;
+		margin-right: 0;
+	}
+
+	@media screen and (max-width: 640px) {
+		.container-1 {display: block; }
+		.box-1 {width: 100%; }
+	} /* 640px media end */
+</style>
+</head>
+<body>
+<div class="wrap">
+	<h2>Doua coloane</h2>
+	<span>.container-1</span>
+	<div class="container-1">
+		<div class="box-1">
+			<h3>Box number 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur quam repudiandae assumenda a ratione beatae doloribus, recusandae dolorem eos autem quasi repellendus possimus!</p>
+		</div><!-- box-1 -->
+		<div class="box-1">
+			<h3>Box number 2</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur quam repudiandae assumenda a ratione beatae doloribus, recusandae dolorem eos autem quasi repellendus possimus!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur quam repudiandae assumenda a ratione beatae doloribus, recusandae dolorem eos autem quasi repellendus possimus!</p>
+
+		</div><!-- box-1 -->
+		<div class="box-1">
+			<h3>Box number 3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur quam repudiandae assumenda a ratione beatae doloribus, recusandae dolorem eos autem quasi repellendus possimus!</p>
+		</div><!-- box-1 -->
+		<div class="box-1">
+			<h3>Box number 3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur quam repudiandae assumenda a ratione beatae doloribus, recusandae dolorem eos autem quasi repellendus possimus!</p>
+		</div><!-- box-1 -->
+		<div class="box-1">
+			<h3>Box number 3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur quam repudiandae assumenda a ratione beatae doloribus, recusandae dolorem eos autem quasi repellendus possimus!</p>
+		</div><!-- box-1 -->
+	</div><!-- container-1 -->
+	
+
+</div><!-- wrap -->
+</body>
+</html>
