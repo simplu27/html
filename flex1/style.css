@@ -65,25 +65,102 @@ textarea {resize: vertical; }
 	CUSTOM STYLES from HERE
 =================================================== */
 
-.container {
-	max-width: 900px;
-	padding: 20px 2%;
-	margin: 20px auto;
+h1 {
+	margin: 20px 20px 10px;
+	text-align: center;
+	color: #555E69;
+}
+
+/*Container 1*/
+
+.container1 {
 	display: flex;
-	background: #f7f7f7;
+	max-width: 900px;
+	margin: 10px auto;
+	padding: 20px;
 }
 
-.box {
-	background: #DFDFDF;
-	margin: 2%;
-	padding: 2%;
+.container1 .box {
+	flex: 1;
+	padding: 20px;
 }
 
-@media screen and (max-width: 640px) {
+/*.container1 .box:first-child {
+	flex: 2;
+}*/
 
-	.container {
+.box1-1 {background: #E8E3DA;}
+.box1-2 {background: #D8C298;}
+.box1-3 {background: #EFF1F2;}
+
+.box:nth-child(2) {
+	flex: 2;
+}
+
+@media screen and (max-width: 678px) {
+
+	.container1 {
 		display: block;
 	}
 
+	.container1 .box {margin-bottom: 20px;}
+
 } /* 640px media end */
 
+
+/* ===========	Content centrat 	=========== */
+
+.center-wrap {
+	width: 100%;
+	padding: 20px;
+	min-height: 350px;
+	background: #555E69;
+	display: flex;
+}
+
+.centrat-vz {
+	margin: auto;
+	background: #FFF;
+	padding: 20px;
+}
+
+
+/* ===========	Layout 	=========== */
+
+.wrap-layout {
+	max-width: 900px;
+	margin: 20px auto;
+	display: flex;
+}
+
+.main-section,
+.sectiunea-1,
+.sectiunea-2 {
+	padding: 20px;
+}
+
+.main-section {
+	background: #EFEDED;
+	flex: 3;
+	order: 2;
+}
+
+.sectiunea-1 {
+	background: #E8E3DA;
+	flex: 1;
+	order: 1;
+}
+
+.sectiunea-2 {
+	background: #E5EFE3;
+	flex: 1;
+	order: 3;
+}
+
+@media screen and (max-width: 678px) {
+
+	.wrap-layout {
+		display: block;
+	}
+
+} /* 678px media end */
