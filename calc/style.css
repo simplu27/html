@@ -1,0 +1,13 @@
+
+html {overflow-y: scroll;}
+
+.foo {
+	background: #EFEFEF;
+	padding: 20px;
+	box-sizing: border-box;
+	max-width: 300px;
+	min-height: 300px;
+	position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+}
