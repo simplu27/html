@@ -1,3 +1,6 @@
+/* Background box-info: #FFDB3A */
+/* Background box-info: #7CFC00 */
+
 
 *, *:before, *:after {
 	box-sizing: border-box;
@@ -25,6 +28,9 @@ body {
 	box-shadow: 2px 2px 2px rgba(0,0,0, .06);
 	margin: 0 0 50px;
 }
+
+.box-info {flex: 1;}
+.box-content {flex: 4;}
 
 .box-info,
 .box-content {
@@ -57,11 +63,6 @@ body {
 	border-color: transparent transparent transparent #FFDB3A;
 	border-width: 10px;
 	margin-right: -20px;
-}
-
-.box-info i {
-	display: block;
-	margin-top: 10px;
 }
 
 
@@ -100,3 +101,43 @@ span.date:before {
 span.tag:before {
 	content: "\f02c";
 }
+
+@media screen and (max-width: 640px) {
+
+	.box {
+		display: block;
+	}
+
+	.box-info {
+		max-width: 100%;
+	}
+
+	.box-info:after {
+		left: 50%;
+		top: 100%;
+		/*border-color: #FFDB3A transparent transparent transparent;*/
+		border-color: #FFDB3A transparent transparent transparent;
+		margin-left: -10px;
+	}
+
+	.box-info span {
+		display: block;
+		margin: 0;s
+	}
+
+	span.date:before,
+	span.tag:before {
+		display: inline;
+		margin: 0 10px;
+	}
+
+	.box-content {
+		padding: 40px 30px 30px;
+	}
+
+	.box-content .title {
+		text-align: center;
+	}
+
+
+} /* 640px media end */
