@@ -1,7 +1,6 @@
 /* Background box-info: #FFDB3A */
 /* Background box-info: #7CFC00 */
 
-
 *, *:before, *:after {
 	box-sizing: border-box;
 }
@@ -89,7 +88,6 @@ body {
 	letter-spacing: .12px;
 }
 
-
 .box-info span {
 	display: block;
 	position: relative;
@@ -155,6 +153,5 @@ span.tag:before {
 	.box-content .title {
 		text-align: center;
 	}
-
 
 } /* 640px media end */
