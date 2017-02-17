@@ -1,7 +1,7 @@
 ## Modul 2 :: Services
 
 #### Desktop
-(images/services.jpg)
+![Desktop view](images/services.jpg?raw=true "Desktop View")
 
 #### Mobile
-(images/services-mobile.jpg)
+![Mobile view](images/services-mobile.jpg?raw=true "Mobile View")
