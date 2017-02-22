@@ -1,0 +1,102 @@
+/*Syles for module-form*/
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #343434;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+::-webkit-input-placeholder {
+  opacity: 1;
+  color: #CCC;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+  color: #CCC;
+}
+
+:-ms-input-placeholder {
+  opacity: 1;
+  color: #CCC;
+}
+
+#form-container {
+	max-width: 500px;
+	margin: 30px auto;
+	padding: 35px 30px;
+	background: #F5F5F5;
+	border: 1px solid #F5F5F5;
+}
+
+#form1 div {
+	margin: 0;
+	padding: 0 0 22px;
+}
+
+#form1 label {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	display: block;
+	padding: 0 0 6px 10px;
+	color: #2F4F4F;
+}
+
+#form1 input,
+#form1 textarea {
+	padding: 4px 10px;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #5b5b5b;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	font-family: inherit;
+}
+
+#form1 textarea {
+	min-height: 180px;
+	min-width: 100%;
+	overflow: auto;
+	font-family: inherit;
+}
+
+#form1 input[type="submit"] {
+	background: #2F4F4F;
+	color: #FFF;
+	border: none;
+	padding: 6px 20px;
+	display: inline-block;
+	/*margin-top: 12px;*/
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+/*Parsley*/
+
+li[class^="parsley-"] {
+	list-style: none;
+	color: red;
+	padding-left: 10px;
+	transition: all .5s;
+}
+textarea.parsley-success,
+input.parsley-success {
+	background: #e6ffe6;
+	opacity: .8;
+}
+
+textarea.parsley-error,
+input.parsley-error {
+	background: #ffe6e6;
+}

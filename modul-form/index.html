@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<title>Modul Form</title>
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ===========	CSS 	=========== -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" media="screen" href="style.css">
+<!--[if lt IE 9]>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- ============	CONTENT INIT	============ -->
+
+<div id="form-container">
+	<form action="" id="form1" data-parsley-validate="">
+		<div>
+			<label for="nume">Nume:</label>
+			<input type="text" name="nume" id="nume" placeholder="John Smith" required="" data-parsley-minlength="3" data-parsley-maxlength="40">
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" placeholder="johnsmith@yahoo.com" required="" data-parsley-trigger="change">
+		</div>
+		<div>
+			<label for="mesaj">Mesaj:</label>
+			<textarea placeholder="Mesajul dvs." required=""></textarea>
+		</div>
+		<input type="submit" id="submit" value="Trimite" required="">
+	</form>	
+</div><!-- form-container -->
+
+<!-- ============	CONTENT END		============ -->
+
+<!-- ===========	JS 	=========== -->
+
+<!-- jQuery v3.1.1 -->
+<script src="js/jquery.js"></script>
+<!-- Parsley.js Version 2.6.2 -->
+<script src="js/parsley.js"></script>
+<script type="text/javascript">
+	// $('#form').parsley();
+</script>
+</body>
+</html>
