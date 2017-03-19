@@ -1,0 +1,59 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AlignTab",
+		"All Autocomplete",
+		"ApacheConf.tmLanguage",
+		"AutoAligner",
+		"AutoFileName",
+		"Autoprefixer",
+		"BracketHighlighter",
+		"CSS Unminifier",
+		"CSS3",
+		"Emmet",
+		"Emmet Css Snippets",
+		"FavoriteFiles",
+		"Gist",
+		"Github Color Theme",
+		"Google Search",
+		"InsertDate",
+		"Inspired GitHub Color Scheme",
+		"Minify",
+		"Nettuts+ Fetch",
+		"Package Control",
+		"Package Syncing",
+		"Select Quoted",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-php",
+		"Theme - Eightlime",
+		"Theme - Soda SolarizedDark",
+		"Theme - SoDaReloaded",
+		"wpseek.com WordPress Developer Assistant"
+	]
+}
+
+// Preferences
+
+{
+	"color_scheme": "Packages/User/SublimeLinter/GitHub (SL).tmTheme",
+	"draw_minimap_border": true,
+	"ensure_newline_at_eof_on_save": false,
+	"fade_fold_buttons": false,
+	"font_size": 12,
+	"highlight_line": true,
+	"hot_exit": true,
+	"ignored_packages":
+	[
+		"CSS",
+		"Vintage"
+	],
+	"show_encoding": true,
+	"soda_classic_tabs": true,
+	"theme": "SoDaReloaded Light.sublime-theme",
+	"word_wrap": true
+}

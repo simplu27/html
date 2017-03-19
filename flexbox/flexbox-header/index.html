@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flexbox Header</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="style.css">
+</head>
+<body>
+	<header id="header">
+		<div class="header-wrap">
+			<div id="logo"><a href="#">Logo</a></div>
+			<nav id="top-nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="hero-container">
+		<div class="dark-overlay">
+		</div><!-- dark-overlay -->
+			<div class="wrapper hero">
+				<span class="pre-title">Timpul trece</span>
+				<h1 class="title">Esti prezent pe web?</h1>
+				<span class="after-title">Concurenta ta este deja acolo</span>
+				<a href="#" class="primary-button">Vreau site!</a>
+			</div><!-- wrapper -->
+	</div><!-- container -->
+
+	<div class="container">
+		<div class="wrapper">
+			<div class="row col-3">
+				<div class="col">
+					<h3>Lorem ipsum dolor.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur vero deserunt error aperiam ipsam enim necessitatibus accusantium a quae?</p>
+				</div>
+				<div class="col">
+					<h3>Lorem ipsum dolor.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur vero deserunt error aperiam ipsam enim necessitatibus accusantium a quae?</p>
+				</div>
+				<div class="col">
+					<h3>Lorem ipsum dolor.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur vero deserunt error aperiam ipsam enim necessitatibus accusantium a quae?</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- wrapper -->
+	</div><!-- container -->
+
+	<div class="container">
+		<div class="wrapper">
+			<div class="row col-4">
+				<div class="col">
+					<h3>Lorem ipsum dolor.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur vero deserunt error aperiam ipsam enim necessitatibus accusantium a quae?</p>
+				</div>
+				<div class="col">
+					<h3>Lorem ipsum dolor.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur vero deserunt error aperiam ipsam enim necessitatibus accusantium a quae?</p>
+				</div>
+				<div class="col">
+					<h3>Lorem ipsum dolor.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur vero deserunt error aperiam ipsam enim necessitatibus accusantium a quae?</p>
+				</div>
+				<div class="col">
+					<h3>Lorem ipsum dolor.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur vero deserunt error aperiam ipsam enim necessitatibus accusantium a quae?</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- wrapper -->
+	</div><!-- container -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+	// Arata dimensiunea ferestrei, in px, in coltul stanga jos
+	// Source: https://gist.github.com/bohman/1351439
+	function showViewPortSize(display) {
+		if(display) {
+			var height = jQuery(window).height();
+			var width = jQuery(window).width();
+			jQuery('body').prepend('<div id="viewportsize" style="z-index:9999;position:fixed;bottom:10px;left:10px;color:#fff;background:rgba(0,0,0,.3);padding:4px 8px">'+ width+' x '+height+'</div>');
+			jQuery(window).resize(function() {
+				height = jQuery(window).height();
+				width = jQuery(window).width();
+				jQuery('#viewportsize').html(width+' x '+height);
+			});
+		}
+	}
+	// Seteaza False, ca sa nu arate
+	showViewPortSize(true);
+</script>
+</body>
+</html>
