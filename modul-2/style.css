@@ -122,8 +122,14 @@ a.read-more:after {
 	font-size: 12px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 760px) {
 
 	.box {width: 47%;}
 
-} /* 680px media end */
+} /* media end */
+
+@media screen and (max-width: 640px) {
+
+	.box {width: 100%;}
+
+} /* media end */
