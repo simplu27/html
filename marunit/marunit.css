@@ -10,6 +10,18 @@
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
 
+/* Basic Styles */
+
+html {
+	font-size: 16px; /*For em margins*/
+	overflow-y: scroll;
+}
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: #333;
+}
+
 /* Basic Clearfix */
 
 .cf:after, .center:after, .row:after {
@@ -21,11 +33,6 @@
 }
 .cf, .center, .row {display:inline-block;}
 .cf, .center, .row {display:block;}
-
-html {
-	font-size: 16px;
-	overflow-y: scroll;
-}
 
 
 /* Border Box Sizing */
@@ -41,11 +48,42 @@ img {
 	height: auto;
 }
 
+/* Layout structure */
+
+.structure {
+	display: flex;
+	margin-left: -2em;
+}
+
+.main-content,
+.sidebar-left,
+.sidebar-right {
+	margin-left: 2em;
+	margin-bottom: 2em;
+}
+
+.main-content {
+	flex-basis: calc(62% - 2em);
+	background: #fcf5e8;
+	order: 1;
+}
+
+.sidebar-left,
+.sidebar-right {
+	background: yellow;
+	flex-basis: calc(38% - 2em);
+	order: 2;
+}
+
 /* Grid */
 
 .container {
 	width: 100%;
-	padding: 2rem;
+	padding: 4em 2em 2em;
+}
+
+.container:nth-of-type(2n+2) {
+	background: rgba(0,0,0,.05);
 }
 
 .center-wrap {
@@ -56,12 +94,11 @@ img {
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0 0 2em;
 	margin-left: -2em;
 }
 
 [class^=unit-] {
-	background: #f1f1ee; /*Just for testing. Remove in production*/
+	background: #fff7b3; /*Just for testing. Remove in production*/
 	margin: 0 0 2em 2em;
 }
 
@@ -97,47 +134,3 @@ img {
 
 } /* 640px media end */
 
-
-/* Gallery */
-
-.center-gallery {
-	max-width: 840px;
-	margin: auto;
-	font-size: 15px; /*Defines margins in em*/
-}
-
-.gallery {
-	margin-left: -2em;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-}
-
-.gal-item img {
-	display: block;
-}
-
-.gallery-3 {}
-
-.gallery-3 .gal-item {
-	flex-basis: calc(33.3333% - 2em);
-	margin-left: 2em;
-	margin-bottom: 2em;
-}
-
-@media screen and (max-width: 680px) {
-
-	.gallery-3 .gal-item {
-		flex-basis: calc(50% - 2em);
-	}
-
-} /* 680px media end */
-
-
-@media screen and (max-width: 480px) {
-
-	.gallery-3 .gal-item {
-		flex-basis: calc(100% - 2em);
-	}
-
-} /* 480px media end */
