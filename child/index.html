@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Child element</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="style.css">
+<style>
+	*, *:before, *after {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.center {
+		max-width: 840px;
+		margin: 20px auto;
+		padding: 20px;
+	}
+
+	.wrap {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -30px;
+	}
+
+	.item {
+		background: beige;
+		/*border: 1px solid #333;*/
+		max-width: calc(33.3333% - 30px);
+		margin-left: 30px;
+		margin-bottom: 30px;
+	}
+
+	.wrap > .item:not(:first-child) {
+		margin-left: 30px;
+		background: blue;
+	}
+
+/*Lista*/
+
+
+.lista li:not(:last-child) {
+	color: brown;
+}
+
+.lista li:first-child {
+	color: green;
+}
+</style>
+</head>
+<body>
+
+<div class="center">
+	<ul class="lista">
+		<li>Lista unu</li>
+		<li>Lista doi</li>
+		<li>Lista trei</li>
+		<li>Lista patru</li>
+		<li>Lista cinci</li>
+		<li>Lista sase</li>
+		<li>Lista sapte</li>
+		<li>Lista opt</li>
+		<li>Lista noua</li>
+		<li>Lista zece</li>
+		<li>Lista unsprezece</li>
+	</ul>
+</div>
+
+<div class="center">
+<div class="wrap">
+	<div class="item">
+		<h3>Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet officiis vel perferendis et ratione velit amet enim nostrum, id fugit ipsam consequatur quasi, aliquam dolor ex nobis iusto, voluptatibus unde. Laborum eligendi placeat facilis, inventore reiciendis quae nostrum sint, minima eum delectus nesciunt provident labore, expedita, quam saepe. Sequi, nulla.</p>
+	</div>
+	<div class="item">
+		<h3>Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet officiis vel perferendis et ratione velit amet enim nostrum, id fugit ipsam consequatur quasi, aliquam dolor ex nobis iusto, voluptatibus unde. Laborum eligendi placeat facilis, inventore reiciendis quae nostrum sint, minima eum delectus nesciunt provident labore, expedita, quam saepe. Sequi, nulla.</p>
+	</div>
+	<div class="item">
+		<h3>Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet officiis vel perferendis et ratione velit amet enim nostrum, id fugit ipsam consequatur quasi, aliquam dolor ex nobis iusto, voluptatibus unde. Laborum eligendi placeat facilis, inventore reiciendis quae nostrum sint, minima eum delectus nesciunt provident labore, expedita, quam saepe. Sequi, nulla.</p>
+	</div>
+	<div class="item">
+		<h3>Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet officiis vel perferendis et ratione velit amet enim nostrum, id fugit ipsam consequatur quasi, aliquam dolor ex nobis iusto, voluptatibus unde. Laborum eligendi placeat facilis, inventore reiciendis quae nostrum sint, minima eum delectus nesciunt provident labore, expedita, quam saepe. Sequi, nulla.</p>
+	</div>
+	<div class="item">
+		<h3>Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet officiis vel perferendis et ratione velit amet enim nostrum, id fugit ipsam consequatur quasi, aliquam dolor ex nobis iusto, voluptatibus unde. Laborum eligendi placeat facilis, inventore reiciendis quae nostrum sint, minima eum delectus nesciunt provident labore, expedita, quam saepe. Sequi, nulla.</p>
+	</div>
+	<div class="item">
+		<h3>Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet officiis vel perferendis et ratione velit amet enim nostrum, id fugit ipsam consequatur quasi, aliquam dolor ex nobis iusto, voluptatibus unde. Laborum eligendi placeat facilis, inventore reiciendis quae nostrum sint, minima eum delectus nesciunt provident labore, expedita, quam saepe. Sequi, nulla.</p>
+	</div>
+	<div class="item">
+		<h3>Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet officiis vel perferendis et ratione velit amet enim nostrum, id fugit ipsam consequatur quasi, aliquam dolor ex nobis iusto, voluptatibus unde. Laborum eligendi placeat facilis, inventore reiciendis quae nostrum sint, minima eum delectus nesciunt provident labore, expedita, quam saepe. Sequi, nulla.</p>
+	</div>
+</div><!-- wrap -->
+</div><!-- center -->
+
+</body>
+</html>
