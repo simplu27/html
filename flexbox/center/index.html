@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Align center</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	
+	*, *:before, *after {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	.parent {
+		max-width: 800px;
+		/*min-height: 400px;*/
+		padding: 200px 20px;
+		background: beige;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+	}
+
+	.children {
+		background: red;
+		color: #FFF;
+		max-width: 600px;
+		margin-bottom: 20px;	
+		padding: 20px;	
+	}
+
+</style>
+</head>
+<body>
+
+	<div class="parent">
+		<div class="children">
+			<h2>Centrat vertical si orizontal</h2>
+		</div>
+		<div class="children">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione mollitia quos repellat maiores doloribus laborum natus quo laboriosam, illum. Amet est laborum quisquam eaque?</p>
+		</div>
+	</div>
+
+</body>
+</html>
