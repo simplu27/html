@@ -7,15 +7,11 @@
 }
 
 .navigation {
+	width: 100%;
 	list-style: none;
-	margin: 0;
+	margin: 0 auto;
 	background: deepskyblue;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: row wrap;
 	justify-content: flex-end;
 }
 
@@ -30,14 +26,13 @@
 	background: #00b7f5;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 768px) {
 	.navigation {
 		justify-content: space-around;
 	}
 }
 @media all and (max-width: 600px) {
 	.navigation {
-		-webkit-flex-flow: column wrap;
 		flex-flow: column wrap;
 		padding: 0;
 	}
@@ -46,7 +41,7 @@
 		text-align: center;
 		padding: 10px;
 		border-top: 1px solid rgba(255, 255, 255, 0.3);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px solzid rgba(0, 0, 0, 0.1);
 	}
 
 	.navigation li:last-of-type a {
