@@ -8,9 +8,13 @@ body{
 	box-sizing: border-box;
 }
 
+.h-bg {
+	background: navy;
+}
+
 #nav-wrap {
 	color: #FFF;
-	background: #333;
+	/*background: #333;*/
 	position: relative;
 	max-width: 900px;
 	margin: 0 auto;
@@ -29,7 +33,7 @@ body{
 }
 
 #logo {
-	/*background: red;*/
+	background: red;
 	padding: 10px 20px;
 	line-height: 30px;
 	font-weight: bold;
@@ -99,12 +103,12 @@ nav ul a:hover {
 
 	nav {
 		display: block;
-		flex-grow: 1;
+		flex-grow: 1; /*Ocupa spatiul disponibil*/
 	}
 
 	nav ul {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: flex-end; /*Aliniaza la dreapta*/
 	}
 
 	nav ul li {border: none;}
