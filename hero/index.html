@@ -123,7 +123,8 @@
 		// Daca js este activ, asculnde-l
 		// $(nav).removeClass('nav-open');
 
-		$(ham).click(function() {
+		$(ham).click(function(e) {
+			e.preventDefault();
 			alert('Clicked');
 			// Schimba hamburger-icon cu close-icon x
 			$(ham).toggleClass('fa-bars fa-close');
