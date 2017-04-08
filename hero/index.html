@@ -8,8 +8,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- ===========	CSS 	=========== -->
-<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i" rel="stylesheet"> 
 <link rel="stylesheet" media="screen" href="style.css">
 </head>
 <body>
@@ -17,9 +18,11 @@
 <div class="header-container">
 	<header id="header">
 		<div id="logo">nupertur</div>
-		<ul>
+		<div id="ham"><i class="fa fa-bars"></i></div>
+		<ul class="open">
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Servicii</a></li>
+			<li><a class="active" href="#">Produse</a></li>
 			<li><a href="#">Portofoliu</a></li>
 			<li><a href="#">Contact</a></li>
 		</ul>
@@ -37,12 +40,29 @@
 		</div>
 	</div><!-- .hero -->
 
-	<div style="max-width: 800px; margin: 20px auto; padding: 20px;">
+<div id="content">
+	
+	<div class="container">
+	<div class="center">
 		<h1>Super preturi in super weekend</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quos sunt iure officia, consectetur illo repellendus itaque aut incidunt. Voluptate error, deleniti culpa vel repudiandae doloremque velit reprehenderit placeat veniam esse, minus ab similique iusto vitae quaerat aspernatur ipsum. Nostrum non doloribus nisi, beatae quae quia, adipisci distinctio fugiat ratione voluptates laboriosam possimus eaque ducimus expedita aliquid ullam at perspiciatis dolorem delectus enim. Voluptatibus temporibus voluptates distinctio fugit et quod hic maxime quis saepe rem asperiores aliquid dolorem veritatis delectus officia ipsam velit rerum odio sunt molestiae veniam, necessitatibus ducimus corrupti iure provident. Eius atque in, iusto quidem, temporibus iure, dolores molestias officia possimus natus fugiat itaque totam illo vel asperiores rem recusandae. Neque nulla tenetur, architecto magnam laborum incidunt aperiam placeat blanditiis ea ratione vel accusantium amet a, temporibus libero dicta aut ipsa recusandae aspernatur magni ipsum ipsam, nisi. Explicabo dicta tenetur laudantium architecto nulla libero eveniet eligendi neque officia obcaecati! Minus vero commodi maiores laudantium iure vitae dolores magnam, molestias quo. Ipsam cum, fugiat. Fugit aperiam distinctio hic neque obcaecati nam cupiditate maxime, cumque, ratione! Consequuntur quas dolor velit blanditiis, aliquid ea deleniti quos sunt vel voluptates quod cupiditate delectus commodi totam perspiciatis mollitia aut eaque nemo iure.</p>
-	</div>
+		<p>Explicabo dicta tenetur laudantium architecto nulla libero eveniet eligendi neque officia obcaecati! Minus vero commodi maiores laudantium iure vitae dolores magnam, molestias quo. Ipsam cum, fugiat. Fugit aperiam distinctio hic neque obcaecati nam cupiditate maxime, cumque, ratione! Consequuntur quas dolor velit blanditiis, aliquid ea deleniti quos sunt vel voluptates quod cupiditate delectus commodi totam perspiciatis mollitia aut eaque nemo iure.</p>
+		<p style="column-count: 2;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quos sunt iure officia, consectetur illo repellendus itaque aut incidunt. Voluptate error, deleniti culpa vel repudiandae doloremque velit reprehenderit placeat veniam esse, minus ab similique iusto vitae quaerat aspernatur ipsum. Nostrum non doloribus nisi, beatae quae quia, adipisci distinctio fugiat ratione voluptates laboriosam possimus eaque ducimus expedita aliquid ullam at perspiciatis dolorem delectus enim. </p>
+	</div><!-- center -->
+	</div><!-- container -->
+
+	<div class="container dark-bg">
+	<div class="center">
+		<h1>Super preturi in super weekend</h1>
+		<p>Explicabo dicta tenetur laudantium architecto nulla libero eveniet eligendi neque officia obcaecati! Minus vero commodi maiores laudantium iure vitae dolores magnam, molestias quo. Ipsam cum, fugiat. Fugit aperiam distinctio hic neque obcaecati nam cupiditate maxime, cumque, ratione! Consequuntur quas dolor velit blanditiis, aliquid ea deleniti quos sunt vel voluptates quod cupiditate delectus commodi totam perspiciatis mollitia aut eaque nemo iure.</p>
+		<p style="column-count: 2;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quos sunt iure officia, consectetur illo repellendus itaque aut incidunt. Voluptate error, deleniti culpa vel repudiandae doloremque velit reprehenderit placeat veniam esse, minus ab similique iusto vitae quaerat aspernatur ipsum. Nostrum non doloribus nisi, beatae quae quia, adipisci distinctio fugiat ratione voluptates laboriosam possimus eaque ducimus expedita aliquid ullam at perspiciatis dolorem delectus enim. </p>
+	</div><!-- center -->
+	</div><!-- container -->
+	
+
+</div><!-- content -->
 
 <div class="footer-container">
+<div class="footer-overlay">
 	
 	<footer id="footer">
 		<div class="widget-container">
@@ -59,22 +79,31 @@
 
 			<div class="widget">
 				<h3 class="widget-title">Contact</h3>
-				<p>Email: <a href="mailto:hero@content.com">hero@content.com</a></p>
-				<p>Tel: <a href="tel:0653563565656">0653563565656</a></p>
-				<h4>Adresa:</h4>
+				<p><i class="fa fa-envelope"></i> <a href="mailto:hero@content.com">hero@content.com</a></p>
+				<p><i class="fa fa-phone-square"></i> <a href="tel:0653563565656">0653563565656</a></p>
+				<p><i class="fa fa-facebook"></i> <a href="#">company.name</a></p>
+				<p><i class="fa fa-google-plus"></i> <a href="#">google.plus</a></p>
+			</div>
+
+			<div class="widget">
+				<h3 class="widget-title">Adresa</h3>
 				<p>Str.Viilor 24</p>
 				<p>Brasov, Romania</p>
+				<p>Cod: 2432345</p>
 			</div>
 
 			<div class="widget">
 				<h3 class="widget-title">Program</h3>
-				<p>Luni - Vineri: 08-17</p>
-				<p>Sambata, Duminica: Inchis</p>
+				<p><i class="fa fa-clock-o"></i> Luni - Vineri: 08-17</p>
+				<p><i class="fa fa-clock-o"></i> Sambata, Duminica: Inchis</p>
 			</div>
 
-		</div>
+		</div><!-- widget-container -->
 	</footer>
 
+	<div id="copyright">Copyright &copy; 2010 - 2017 <a href="#" title="Site description">Company Name</a>. All rigts reserved | <a href="#">Terms and conditions</a></div>
+
+</div><!-- footer-overlay -->
 </div><!-- footer-container -->
 	
 	
@@ -83,6 +112,47 @@
 
 <!-- ===========	JS 	=========== -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="script.js"></script>
+<script>
+	$(document).ready(function(){  
+	
+		// Menu
+		var ham = $('#ham i');
+		var nav = $('#header ul');
+
+		// In caz de js este dezactivat, arata meniul
+		// Daca js este activ, asculnde-l
+		nav.removeClass('open');
+
+		ham.click(function() {
+			// Schimba hamburger-icon cu close-icon x
+			ham.toggleClass('fa-bars fa-close');
+
+			if (nav.hasClass('open')) {
+				nav.removeClass('open');
+			} else {
+				nav.addClass('open');
+			}
+		}); // End menu
+
+
+		// Arata dimensiunea ferestrei, in px, in coltul stanga jos
+		// Source: https://gist.github.com/bohman/1351439
+		function showViewPortSize(display) {
+			if(display) {
+				var height = jQuery(window).height();
+				var width = jQuery(window).width();
+				jQuery('body').prepend('<div id="viewportsize" style="z-index:9999;position:fixed;bottom:10px;left:10px;color:#fff;background:rgba(0,0,0,.3);padding:4px 8px">'+ width+' x '+height+'</div>');
+				jQuery(window).resize(function() {
+					height = jQuery(window).height();
+					width = jQuery(window).width();
+					jQuery('#viewportsize').html(width+' x '+height);
+				});
+			}
+		}
+		// Seteaza False, ca sa nu arate
+		showViewPortSize(true);
+	
+	});  //end document ready
+</script>
 </body>
 </html>
