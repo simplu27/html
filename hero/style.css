@@ -1,5 +1,5 @@
 
-*, *:before, *:after {
+*, *::before, *::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -136,8 +136,8 @@ p {
 		display: none;
 	}
 
-	#header ul.open {
-		display: flex;
+	#header ul.nav-open {
+		display: block;
 	}
 
 	#header ul li a {

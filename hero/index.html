@@ -121,16 +121,16 @@
 
 		// In caz de js este dezactivat, arata meniul
 		// Daca js este activ, asculnde-l
-		// $(nav).removeClass('open');
+		// $(nav).removeClass('nav-open');
 
 		$(ham).click(function() {
 			// Schimba hamburger-icon cu close-icon x
 			$(ham).toggleClass('fa-bars fa-close');
 
-			if ($(nav).hasClass('open')) {
-				$(nav).removeClass('open');
+			if ($(nav).hasClass('nav-open')) {
+				$(nav).removeClass('nav-open');
 			} else {
-				$(nav).addClass('open');
+				$(nav).addClass('nav-open');
 			}
 		}); // End menu
 
