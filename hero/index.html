@@ -112,7 +112,7 @@
 
 <!-- ===========	JS 	=========== -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>
+<script type="text/javascript">
 	$(document).ready(function(){  
 	
 		// Menu
@@ -124,8 +124,8 @@
 		// $(nav).removeClass('nav-open');
 
 		$(ham).click(function(e) {
-			e.preventDefault();
-			alert('Clicked');
+			// e.preventDefault();
+			// alert('Clicked');
 			// Schimba hamburger-icon cu close-icon x
 			$(ham).toggleClass('fa-bars fa-close');
 
