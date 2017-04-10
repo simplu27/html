@@ -205,6 +205,10 @@ p {
 
 @media screen and (max-width: 640px) {
 
+	.hero-overlay {
+		padding: 50px 20px;
+	}
+
 	.hero h1 {
 		font-size: 50px;
 	}
@@ -353,5 +357,5 @@ p {
 }
 
 .dark-bg {
-	background: rgba(0,0,0,.02);
+	background: rgba(0,0,0,.04);
 }

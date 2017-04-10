@@ -19,7 +19,7 @@
 	<header id="header">
 		<div id="logo">nupertur</div>
 		<div id="ham"><i class="fa fa-bars"></i></div>
-		<ul>
+		<ul class="">
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Servicii</a></li>
 			<li><a class="active" href="#">Produse</a></li>
@@ -118,21 +118,22 @@
 		// Menu
 		var ham = $('#ham i');
 		var nav = $('#header ul');
+		var no = 'nav-open';
 
 		// In caz de js este dezactivat, arata meniul
 		// Daca js este activ, asculnde-l
 		// $(nav).removeClass('nav-open');
 
-		$(ham).click(function(e) {
+		$(ham).click(function() {
 			// e.preventDefault();
 			// alert('Clicked');
 			// Schimba hamburger-icon cu close-icon x
 			$(ham).toggleClass('fa-bars fa-close');
 
-			if ($(nav).hasClass('nav-open')) {
-				$(nav).removeClass('nav-open');
+			if ($(nav).hasClass(no)) {
+				$(nav).removeClass(no);
 			} else {
-				$(nav).addClass('nav-open');
+				$(nav).addClass(no);
 			}
 		}); // End menu
 

@@ -18,17 +18,57 @@
 	ul.menu-open {
 		background: yellow;
 	}
+
+	.has-sub-menu {
+		position: relative;
+		/*display: block;*/
+		background: pink;
+	}
+
+	.has-sub-menu::after {
+		position: absolute;
+		right: 0;
+		top: 0;
+		content: "+";
+		background: blue;
+		width: 20px;
+		text-align: center;
+	}
+
+	.has-sub-menu ul {
+		display: none;
+	}
+
+	.has-sub-menu ul.submenu-open {
+		display: block;
+	}
+
 </style>
 </head>
 <body>
 <!-- ============	CONTENT INIT	============ -->
 
 	<div id="nav">
-		<ul>
+		<ul class="top-nav">
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Servicii</a></li>
-			<li><a href="#">Produse</a></li>
-			<li><a href="#">Contact</a></li>
+			<li class="has-sub-menu"><a href="#produse">Produse</a>
+				<ul class="">
+					<li><a href="#">Produs 1</a></li>
+					<li><a href="#">Produs 2</a></li>
+					<li><a href="#">Produs 3</a></li>
+					<li><a href="#">Produs 4</a></li>
+					<li><a href="#">Produs 5</a></li>
+				</ul>
+			</li>
+			<li class=""><a href="#">Contact</a>
+				<ul>
+					<li><a href="#">Contact 1</a></li>
+					<li><a href="#">Contact 2</a></li>
+					<li><a href="#">Contact 3</a></li>
+					<li><a href="#">Contact 4</a></li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 
@@ -39,12 +79,27 @@
 <script type="text/javascript">
 	$(document).ready(function(){  
 	
-		$('#nav ul').click(function(){
-			if ($('#nav ul').hasClass('menu-open')) {
-				$('#nav ul').removeClass('menu-open');
+		$('#nav ul.top-nav').click(function(){
+			if ($('#nav ul.top-nav').hasClass('menu-open')) {
+				$('#nav ul.top-nav').removeClass('menu-open');
 			} else {
-				$('#nav ul').addClass('menu-open');
+				$('#nav ul.top-nav').addClass('menu-open');
 			}
+		});
+
+
+			$('li').has('ul').addClass('has-sub-menu');
+		
+		
+
+		$('.has-sub-menu').click(function(e){
+			e.preventDefault;
+			if ($(this).children('ul').hasClass('submenu-open')) {
+				$(this).children('ul').removeClass('submenu-open');
+			} else {
+				$(this).children('ul').addClass('submenu-open');
+			}
+			
 		});
 	
 	});  //end document ready
