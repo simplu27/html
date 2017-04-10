@@ -151,7 +151,8 @@ p {
 =================================================== */
 
 .hero {
-	background: url(office.jpg);
+	/*background: url(office.jpg);*/
+	background: url(transport.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
