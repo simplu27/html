@@ -1,0 +1,63 @@
+/*--------------------------------------------------------------
+	FBX Grid
+	Flexbox based grid
+	May 2017
+	v 1.0
+--------------------------------------------------------------*/
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Full width container */
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Center things */
+
+.center {
+	max-width: 880px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Full width container */
+/* .columns :: container for columns; */
+
+.columns {
+	display: flex;
+	background: pink;
+}
+
+/* .column :: single column. must be in columns; */
+
+.column {
+	flex: 1 1 0%;
+	border: 1px solid #EFEFEF;
+	background: white;
+}
+
+.columns > .column:not(:first-child) {
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 660px) {
+
+	.columns {
+		flex-flow: row wrap;
+	}
+
+	.column {
+		flex: 1 100%;
+	}
+
+	.columns > .column:not(:first-child) {
+		margin-left: 0;
+	}
+
+} /* 660px media end */

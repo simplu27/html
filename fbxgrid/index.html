@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<title>FBX Grid</title>
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ===========	CSS 	=========== -->
+<link rel="stylesheet" media="screen" href="fbxgrid.css">
+<link rel="stylesheet" media="screen" href="style.css">
+<!--[if lt IE 9]>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- ============	CONTENT INIT	============ -->
+
+	<div class="container">
+		<div class="center">
+			<div class="columns">
+				<div class="column">
+					<h3>Lorem ipsum dolor sit.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quis.</p>
+				</div><!-- column -->
+				<div class="column">
+					<h3>Lorem ipsum dolor sit.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quis.</p>
+				</div><!-- column -->
+				<div class="column">
+					<h3>Lorem ipsum dolor sit.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quis.</p>
+				</div><!-- column -->
+			</div><!-- columns -->
+		</div><!-- center -->
+	</div><!-- container -->
+
+<!-- ============	CONTENT END		============ -->
+
+<!-- ===========	JS 	=========== -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	// Arata dimensiunea ferestrei, in px, in coltul stanga jos
+	// Source: https://gist.github.com/bohman/1351439
+	function showViewPortSize(display) {
+		if(display) {
+			var height = jQuery(window).height();
+			var width = jQuery(window).width();
+			jQuery('body').prepend('<div id="viewportsize" style="z-index:9999;position:fixed;bottom:10px;left:10px;color:#fff;background:rgba(0,0,0,.3);padding:4px 8px">'+ width+' x '+height+'</div>');
+			jQuery(window).resize(function() {
+				height = jQuery(window).height();
+				width = jQuery(window).width();
+				jQuery('#viewportsize').html(width+' x '+height);
+			});
+		}
+	}
+	// Seteaza False, ca sa nu arate
+	showViewPortSize(true);
+</script>
+<script src="custom.js"></script>
+</body>
+</html>
