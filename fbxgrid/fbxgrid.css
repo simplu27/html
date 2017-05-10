@@ -18,6 +18,19 @@
 	margin: 0 auto;
 }
 
+/* Darker background for container */
+
+.container.darker {
+	background: rgba(0,0,0,.05);
+}
+
+/* Add padding in container, top & bottom */
+
+.padd-40 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
 /* Center things */
 
 .center {
@@ -58,6 +71,7 @@
 
 	.columns > .column:not(:first-child) {
 		margin-left: 0;
+		margin-top: 20px;
 	}
 
 } /* 660px media end */
