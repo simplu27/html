@@ -24,6 +24,11 @@
 	background: rgba(0,0,0,.05);
 }
 
+.container.col3-container {
+	padding: 80px 0 60px;
+	background: #2c3e58;
+}
+
 /* Add padding in container, top & bottom */
 
 .padd-40 {
@@ -75,3 +80,41 @@
 	}
 
 } /* 660px media end */
+
+
+
+/* ================================================
+	3 Columns, multiple rows
+=================================================== */
+
+.columns-3 {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -24px;
+	/*justify-content: space-between;*/
+}
+
+.columns-3 .column {
+	flex-basis: calc(33.333% - 24px);
+	max-width: calc(33.333% - 24px);
+	margin-right: 24px;
+	margin-bottom: 24px;
+}
+
+@media screen and (max-width: 720px) {
+
+	.columns-3 .column {
+		flex-basis: calc(50% - 24px);
+		max-width: calc(50% - 24px);
+	}
+
+} /* 720px media end */
+
+@media screen and (max-width: 580px) {
+
+	.columns-3 .column {
+		flex-basis: calc(100% - 24px);
+		max-width: calc(100% - 24px);
+	}
+
+} /* 580px media end */
