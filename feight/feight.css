@@ -1,0 +1,131 @@
+/*
+	FEIGHT Flexbox Grid
+	Feb 2018
+*/
+
+/* Basic styles */
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+p {margin: 0;}
+p ~ p {margin-top: 10px;}
+
+/* Layout: container and center wrapper; */
+
+.container {
+	width: 100%;
+	padding: 60px 20px 50px;
+}
+
+.container:nth-child(even) {
+	background: rgba(0,0,0,.03);
+}
+
+/* .row is container for flex items (.unit)  */
+
+.row {
+	max-width: 840px;
+	margin: 0 auto;
+	padding-left: -20px;
+	padding-right: -20px;
+	/*background: oldlace;*/
+	display: flex;
+}
+
+/* .unit must be in a .row */
+
+.unit {
+	/*background: bisque;*/
+	padding: 0 20px 20px;
+}
+
+.inset {
+	background: rgba(0,0,0,.1);
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.o-coloane,
+.doua-coloane,
+.trei-coloane,
+.patru-coloane,
+.cinci-coloane {
+	flex-wrap: wrap;
+}
+
+.o-coloane,
+.doua-coloane > .unit,
+.trei-coloane > .unit,
+.patru-coloane > .unit,
+.cinci-coloane > .unit {
+	padding-bottom: 40px;
+}
+
+.o-coloane > .unit {
+	max-width: 100%;
+	flex-basis: 100%;
+}
+
+.doua-coloane > .unit {
+	max-width: 50%;
+	flex-basis: 50%;
+}
+
+.trei-coloane > .unit {
+	max-width: 33.33%;
+	flex-basis: 33.33%;
+}
+
+.patru-coloane > .unit {
+	max-width: 25%;
+	flex-basis: 25%;
+}
+
+.cinci-coloane > .unit {
+	max-width: 20%;
+	flex-basis: 20%;
+}
+
+@media screen and (max-width: 640px) {
+
+	body {background: pink;}
+
+	.row {
+		flex-direction: column;
+	}
+
+	.unit {
+		padding: 0 0 30px 0;
+	}
+
+	.o-coloane > .unit,
+	.doua-coloane > .unit,
+	.trei-coloane > .unit,
+	.patru-coloane > .unit,
+	.cinci-coloane > .unit {
+		max-width: 100%;
+		flex-basis: 100%;
+		padding: 0 0 30px 0;
+	}
+
+} /* 640px media end */
