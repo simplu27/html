@@ -11,9 +11,10 @@ html {
 
 body {
 	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
 	font-size: 16px;
-	line-height: 1.4;
-	color: #333;
+	line-height: 1.5;
+	color: #222;
 	margin: 0;
 	padding: 0;
 }
@@ -30,24 +31,143 @@ img {
 p {margin: 0;}
 p ~ p {margin-top: 10px;}
 
+
+/* ================================================
+	Top Navigation + Logo
+=================================================== */
+
+.container-top {
+	width: 100%;
+	background: #333;
+}
+
+.container-top,
+.container-top a {
+	color: #F9F9F9;
+	text-decoration: none;
+}
+
+.center-wrap {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.nav-wrap {
+	display: flex;
+	align-content: space-between;
+}
+
+#ham {
+	line-height: 20px;
+	padding: 20px;
+	display: none;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#logo {
+	flex: 1;
+}
+
+#logo a {
+	display: block;
+	line-height: 20px;
+	font-weight: bold;
+	font-size: 22px;
+	padding: 20px 0;
+}
+
+#navigation a {
+	display: inline-block;
+	padding: 20px;
+	line-height: 20px;
+}
+
+#navigation a:hover,
+#navigation a.active {
+	background: #555;
+}
+
+@media screen and (max-width: 640px) {
+
+	#navigation.topnav {
+		display: none;
+	}
+
+	#navigation.topnav.responsive {
+		display: block;
+	}
+
+	.center-wrap {
+		padding: 0 0;
+	}
+
+	.nav-wrap {
+		flex-wrap: wrap;
+	}
+
+	#logo {
+		margin-left: 20px;
+	}
+
+	#ham {
+		display: block;
+	}
+
+	#navigation {
+		width: 100%;
+		flex-basis: 100%;
+	}
+
+	#navigation a {
+		width: 100%;
+		line-height: 1.2;
+		padding: 10px 20px;
+		border-top: 1px solid rgba(250,250,250,.1);
+	}
+
+} /* 640px media end */
+
+/* ================================================
+	Top Navigation + Logo END
+=================================================== */
+
 /* Layout: container and center wrapper; */
 
 .container {
-	width: 100%;
-	padding: 60px 20px 50px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 60px 20px 30px;
+	background: rgba(250,250,250,.95);
 }
 
 .container:nth-child(even) {
-	background: rgba(0,0,0,.03);
+	background: rgba(0,0,0,.08);
 }
+
+.container > .wrap {
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+
+	.container > .wrap {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+} /* 640px media end */
 
 /* .row is container for flex items (.unit)  */
 
 .row {
-	max-width: 840px;
+	max-width: 960px;
 	margin: 0 auto;
-	padding-left: -20px;
-	padding-right: -20px;
 	/*background: oldlace;*/
 	display: flex;
 }
@@ -56,7 +176,7 @@ p ~ p {margin-top: 10px;}
 
 .unit {
 	/*background: bisque;*/
-	padding: 0 20px 20px;
+	padding: 0 20px 50px;
 }
 
 .inset {
@@ -78,7 +198,7 @@ p ~ p {margin-top: 10px;}
 .trei-coloane > .unit,
 .patru-coloane > .unit,
 .cinci-coloane > .unit {
-	padding-bottom: 40px;
+	/*padding-bottom: 40px;*/
 }
 
 .o-coloane > .unit {
@@ -108,14 +228,14 @@ p ~ p {margin-top: 10px;}
 
 @media screen and (max-width: 640px) {
 
-	body {background: pink;}
+	body {background: papayawhip;}
 
 	.row {
 		flex-direction: column;
 	}
 
 	.unit {
-		padding: 0 0 30px 0;
+		padding: 0 0 50px 0;
 	}
 
 	.o-coloane > .unit,
@@ -125,7 +245,7 @@ p ~ p {margin-top: 10px;}
 	.cinci-coloane > .unit {
 		max-width: 100%;
 		flex-basis: 100%;
-		padding: 0 0 30px 0;
+		/*padding: 0 0 50px 0;*/
 	}
 
 } /* 640px media end */
