@@ -20,7 +20,7 @@
 
 // Responsive menu Freight 2018
 
-document.querySelector('#ham').addEventListener('click', menuResponsive);
+// document.querySelector('#ham').addEventListener('click', menuResponsive);
 
 function menuResponsive() {
 	
