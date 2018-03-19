@@ -74,7 +74,7 @@ a#ham {
 }
 
 .close-icon {
-	background: url("img/close.svg");
+	background: url("img/delete.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: all .3s;
