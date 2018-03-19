@@ -14,12 +14,17 @@
 		<div class="center-wrap">
 			<div class="nav-wrap">
 
-				<div id="logo"><a href="#">Logo</a></div>
+				<div id="logo"><a href="#">Freight CSS</a></div>
 
-				<div id="ham"><a href="javascript:void(0);" class="icon" onclick="menuResponsive()">&#9776;</a></div>
+				<!-- <a id="ham" href="javascript:void(0);" class="ham-icon" onclick="menuResponsive()"></a> -->
+				<a id="ham" href="javascript:void(0);" class="ham-icon"></a>
 
 				<div id="navigation" class="topnav">
-					<a href="#">Home</a><a class="active" href="#">Services</a><a href="#">Portfolio</a><a href="#">Contact</a></div><!-- navigation -->
+					<a class="active" href="#">Home</a>
+					<a href="#">Services</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Contact</a>
+				</div><!-- navigation -->
 
 			</div><!-- nav-wrap -->
 		</div><!-- center-wrap -->
@@ -149,42 +154,7 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>
-	// Arata dimensiunea ferestrei, in px, in coltul stanga jos
-	// Source: https://gist.github.com/bohman/1351439
-	function showViewPortSize(display) {
-		if(display) {
-			var height = jQuery(window).height();
-			var width = jQuery(window).width();
-			jQuery('body').prepend('<div id="viewportsize" style="z-index:9999;position:fixed;bottom:10px;left:10px;color:#fff;background:rgba(0,0,0,.3);padding:4px 8px">'+ width+' x '+height+'</div>');
-			jQuery(window).resize(function() {
-				height = jQuery(window).height();
-				width = jQuery(window).width();
-				jQuery('#viewportsize').html(width+' x '+height);
-			});
-		}
-	}
-	// Seteaza False, ca sa nu arate
-	showViewPortSize(true);
-</script>
-
-<script>
-function menuResponsive() {
-    var x = document.getElementById("navigation");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-
-    var ham = document.getElementsByClassName('icon');
-        if (ham.innerHTML === "&#9776;") {
-            ham.innerHTML = "Close";
-        } else {
-            ham.innerHTML = "&#9776;";
-        }
-}
-</script>
+<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
