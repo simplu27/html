@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contact Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="formx.css">
+</head>
+<body>
+
+<div id="form-container">
+
+	<span class="formx-title">Contact Form</span>
+	
+	<form id="formx">
+
+		<div class="form-row">
+			<label for="formxName">Name: </label>
+			<input type="text" name="formxName" id="formxName">
+		</div>
+		
+		<div class="form-row">
+			<label for="cars">Selectati o valoare: </label>
+			<select name="cars">
+				<option value="0">Select...</option>
+				<option value="opel">Opel</option>
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="fiat">Fiat</option>
+				<option value="audi">Audi</option>
+			</select>
+		</div>
+
+		<div class="form-row">
+			<label for="formxEmail">Email: </label>
+			<input type="email" name="formxEmail" id="formxEmail">
+		</div>
+
+		<div class="form-row">
+			<label for="formxPassword">Password: </label>
+			<input type="password" name="formxPassword" id="formxPassword">
+		</div>
+
+		<div class="form-row">
+			<div class="row-title">Select what you want:</div>
+			<label><input type="checkbox" name="formxNewsletter" value="yes"> Newsletter</label>
+			<label><input type="checkbox" name="formxTerms" value="yes"> I have read the terms</label>
+		</div>
+
+		<div class="form-row">
+			<input type="submit" id="formxSubmit" name="formxSubmit">
+			<input type="reset">
+		</div>
+
+
+	</form>
+
+</div><!-- form-container -->
+
+
+</body>
+</html>
