@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Feight Menu +</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="feight-menu-plus.css">
+</head>
+<body>
+
+	<div id="top-container">
+		<div id="top-center">
+			<a id="logo">Feight Menu +</a>
+			<ul id="top-nav" class="top-nav">
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Services</a>
+					<ul>
+						<li><a href="#">Transport</a></li>
+						<li><a href="#">Consultation</a></li>
+						<li><a href="#">Reservation</a></li>
+						<li><a href="#">Post Services</a></li>
+						<li><a href="#">Rapid</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Testimonials</a></li>
+				<li><a href="#">Portfolio</a>
+					<ul>
+						<li><a href="#">This Year</a></li>
+						<li><a href="#">Last Year</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<a href="#" id="ham" class="ham-icon"></a>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+	// On click hamburger icon
+	// Call menuResponsive function
+	document.querySelector('#ham').addEventListener('click', menuResponsive);
+
+	function menuResponsive() {
+		
+		var x = document.getElementById("top-nav");
+		// Adauga clasa "responsive"
+		if (x.className === "top-nav") {
+			x.className += " responsive";
+		} else {
+			x.className = "top-nav";
+		}
+
+		// Toggle class: ham-icon, close-icon
+		var ham = document.getElementById('ham');
+		ham.classList.toggle('ham-icon');
+		ham.classList.toggle('close-icon');
+
+	} // menuResponsive
+
+	// Submenu
+
+	// Select all "li" > "ul"
+	// Add class to li: .submenu
+
+</script>
+
+</body>
+</html>
