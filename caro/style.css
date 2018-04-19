@@ -1,0 +1,30 @@
+
+
+* {margin: 0; padding: 0;}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.caro-wrap {
+	display: block;
+	max-width: 800px;
+	margin: 30px auto;
+	padding: 20px 30px;
+	background: beige;
+	min-height: 100px;
+}
+
+.caro-item {
+	max-width: 220px;
+	padding: 5px;
+}
+
+.caro-item a,
+.caro-item img {
+	display: block;
+}

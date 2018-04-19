@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Carousel Proba</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="style.css">
+<link rel="stylesheet" media="screen" href="slick.css">
+
+</head>
+<body>
+
+
+<div class="caro-wrap">
+	<div class="caro-container">
+
+		<div class="caro-item">
+			<a href="img/image1.jpg" title="Title 1"><img src="img/image1.jpg" alt=""></a>
+		</div><!-- caro-item -->
+
+		<div class="caro-item">
+			<a href="img/image2.jpg" title="Title 1"><img src="img/image2.jpg" alt=""></a>
+		</div><!-- caro-item -->
+
+		<div class="caro-item">
+			<a href="img/image3.jpg" title="Title 1"><img src="img/image3.jpg" alt=""></a>
+		</div><!-- caro-item -->
+
+		<div class="caro-item">
+			<a href="img/image4.jpg" title="Title 1"><img src="img/image4.jpg" alt=""></a>
+		</div><!-- caro-item -->
+
+		<div class="caro-item">
+			<a href="img/image5.jpg" title="Title 1"><img src="img/image5.jpg" alt=""></a>
+		</div><!-- caro-item -->
+
+	</div><!-- caro-container -->
+</div><!-- wrap -->
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script>
+	$(document).ready(function(){  
+	
+		$('.caro-container').slick({
+		  infinite: true,
+		   dots: true,
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		});
+	
+	});  //end document ready
+</script>
+
+
+</body>
+</html>
