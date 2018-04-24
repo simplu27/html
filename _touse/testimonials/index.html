@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Testimonial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="owl.css">
+<link rel="stylesheet" media="screen" href="testimonial.css">
+</head>
+<body>
+
+	<div id="testimonials" class="testimonial-section">
+		<div class="testimonial-center">
+			<h3 class="testimonial-title">Ce spun clientii nostrii:</h3>
+
+			<div class="testimonial-container testimonials owl-carousel">
+
+				<div class="testimonial">
+					<p>Quidem eos fugiat perspiciatis veritatis nulla dolores deserunt numquam earum minus dignissimos consectetur nihil cum dolorum laborum voluptatem, assumenda minima qui id.</p>
+					<span class="author">Gianina I.</span>
+				</div><!-- testimonial -->
+
+				<div class="testimonial">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta omnis fuga, earum sed illo quia labore quo harum aliquid. Officia natus aliquam aliquid, blanditiis sit, doloremque ad assumenda nihil mollitia nisi sequi quaerat laborum ullam nemo quibusdam quis, necessitatibus quasi.</p>
+					<span class="author">Robert A.</span>
+				</div><!-- testimonial -->
+
+				<div class="testimonial">
+					<p>Officia natus aliquam aliquid, blanditiis sit, doloremque ad assumenda nihil mollitia nisi sequi quaerat laborum ullam nemo quibusdam quis, necessitatibus quasi.</p>
+					<span class="author">Andreea D.</span>
+				</div><!-- testimonial -->
+
+				<div class="testimonial">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta omnis fuga, earum sed illo quia labore quo harum aliquid. Officia natus aliquam aliquid, blanditiis sit, doloremque ad assumenda nihil mollitia nisi sequi quaerat laborum ullam nemo quibusdam quis, necessitatibus quasi.</p>
+					<span class="author">Amelia A.</span>
+				</div><!-- testimonial -->
+
+			</div><!-- testimonial-container -->
+		</div><!-- center -->
+	</div><!-- #testimonials .section -->
+
+
+<script src="jquery.js"></script>
+<script src="owl.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.owl-carousel').owlCarousel({
+			items: 1,
+			loop: true,
+			nav: true,
+			dots: true,
+			autoHeight: true,
+
+			autoplay: true,
+			autoplayTimeout: 10000,
+			autoplayHoverPause: true,
+		});
+	});
+</script>
+
+</body>
+</html>

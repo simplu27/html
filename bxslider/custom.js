@@ -1,17 +1,18 @@
 $(document).ready(function(){  
 
-	// $('.slider').bxSlider({
-	// 	infiniteLoop: true,
-	// 	minSlides: 1,
-	// 	maxSlides: 4,
-	// 	slideWidth: 300,
-	// 	shrinkItems: true,
-	// 	nextText: "Inainte",
-	// 	prevText: "Inapoi",
-	// 	touchEnabled: true,
-	// 	swipeThreshold: 0,
-	// 	responsive: true,
-	// });
+	$('.slider').bxSlider({
+		infiniteLoop: true,
+		minSlides: 2,
+		maxSlides: 4,
+		slideWidth: 350,
+		slideMargin: 20,
+		shrinkItems: true,
+		nextText: "Inainte",
+		prevText: "Inapoi",
+		touchEnabled: true,
+		swipeThreshold: 0,
+		responsive: true,
+	});
 
 	$('.gallery').each(function() { // the containers for all your galleries
 	    $(this).magnificPopup({
