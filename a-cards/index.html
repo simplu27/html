@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cards List</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="style.css">
+<style type="text/css">
+	
+	*, *:before, *:after {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.wrap {
+		max-width: 860px;
+		margin: 20px auto;
+		padding: 0 5%;
+	}
+
+	ul.cards {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.cards li {
+		display: block;
+		list-style: none;
+		max-width: 30%;
+		border: 1px solid gray;
+		border-radius: 4px;
+		position: relative;
+		margin-bottom: 5%;
+		transition: all .3s;
+		font-family: Arial, sans-serif;
+		color: #343434;
+	}
+
+	.cards li:hover {
+		border-color: green;
+	}
+
+	.cards li img {
+		filter: grayscale(50%);
+		transition: all .3s;
+	}
+
+	.cards li:hover img {
+		filter: none;
+	}
+
+	@media screen and (max-width: 740px) {
+	
+		.cards li {
+			max-width: 47.5%;
+		}
+	
+	} /* 640px media end */
+
+	.cards h2 {
+		text-decoration: none;
+		padding-bottom: 0;
+	}
+
+	.cards li h2 a::after {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	.cards li img {
+		display: block;
+		border-radius: 4px 4px 0 0;
+	}
+
+	.cards li h2,
+	.cards li p,
+	.cards li small {
+		padding: 10px 14px;
+	}
+
+
+
+	.cards li small {
+		display: block;
+		margin-bottom: 10px;
+		opacity: .6;
+	}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+	
+	<ul class="cards">
+		<li>
+			<img src="img/01.jpg">
+			<h2><a href="">Card Title</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptates itaque quae cupiditate labore ea libero sequi debitis eveniet, voluptatum.</p>
+			<small>Mark Twain Sr.</small>
+		</li>
+		<li>
+			<img src="img/02.jpg">
+			<h2><a href="">Second Title</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptates itaque quae cupiditate labore ea libero sequi debitis eveniet, voluptatum. Lorem ipsum dolor sit amet.</p>
+			<small>Rwana Hilderberg</small>
+		</li>
+		<li>
+			<img src="img/03.jpg">
+			<h2><a href="">Third Title</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptates itaque quae cupiditate labore ea libero sequi debitis eveniet, voluptatum.</p>
+			<small>Simona Simpson</small>
+		</li>
+
+		<li>
+			<img src="img/03.jpg">
+			<h2><a href="">Third Title</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptates itaque quae cupiditate labore ea libero sequi debitis eveniet, voluptatum.</p>
+			<small>Simona Simpson</small>
+		</li>
+	</ul>
+
+</div>
+
+</body>
+</html>

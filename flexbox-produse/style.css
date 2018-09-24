@@ -1,0 +1,81 @@
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.center {
+	max-width: 800px;
+	margin: 20px auto;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.3;
+}
+
+ul.lista-produse,
+ul.lista-produse li {
+	list-style: none;
+}
+
+.lista-produse a {text-decoration: none;}
+.lista-produse img {display: inline-block; max-width: 100%; height: auto;}
+
+.lista-produse {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.lista-produse li {
+	/*flex: 1;*/
+	flex-basis: 31.333%;
+	max-width: 31.333%;
+	margin: 1%;
+	border: 1px solid rgba(0,0,0,.09);
+	border-radius: 6px;
+}
+
+.lista-produse li {
+	display: flex;
+	flex-direction: column;
+}
+
+.lista-produse li p {
+	display: block;
+	margin-top: auto;
+}
+
+.lista-produse li a img {
+	/*flex-grow: 1;*/
+}
+
+.lista-produse li h3 {
+	font-size: 17px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.singleLink {
+	margin-top: auto;
+	border: none;
+	background: #7E1511;
+	color: #FFF;
+	text-align: center;
+	display: inline-block;
+	padding: 10px 5px;
+	max-width: 90%;
+	margin-left: 5%;
+	margin-bottom: 10px;
+}
+
+.lista-produse li span {
+	display: block;
+	background: #A6A5A1;
+	color: #FFF;
+	padding: 5px;
+	font-size: 14px;
+	border-radius: 6px 6px 0 0;
+	text-align: center;
+}
+

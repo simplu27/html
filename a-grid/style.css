@@ -1,0 +1,61 @@
+
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.center {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1em 2em -1em;
+}
+
+.unit {
+	flex: 1;
+	/*background: rgba(0,0,0,.2);*/
+	padding: 0 1em 1.5em 1em;
+}
+
+.row-2 > .unit {flex: 0 0 50%; }
+.row-3 > .unit {flex: 0 0 33.3333%; }
+
+.inset {
+	background: rgba(244, 242, 240,1);
+	padding: 10px;
+}
+
+.unit-full {
+	flex: 0 0 100%;
+	padding: 0 1em 1em 1em;
+}
+
+
+/* Test */
+
+.row-x {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1em 0 1em -2em;
+}
+
+.unit-x {
+	flex: 1;
+	/*background: rgba(0,0,0,.2);*/
+	margin: 0 0 4% 4%;
+	background: yellow;
+}
+
+.unit-x-50 {
+	flex: 0 0 46%;
+}
+
+
