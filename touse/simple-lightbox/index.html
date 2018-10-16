@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Simple Lightbox 2018</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="simplelightbox.min.css">
+<link rel="stylesheet" media="screen" href="style.css">
+</head>
+<body>
+
+	<div class="wrap">
+		<a href="img/01.jpg" title="Title anchor"><img src="img/01.jpg" alt="Alternative Img Attribute"></a>
+		<a href="img/03.jpg" title="Title anchor"><img src="img/03.jpg" alt="Alternative Img Attribute"></a>
+		<a href="img/02.jpg" title="Title anchor"><img src="img/02.jpg" alt="Alternative Img Attribute"></a>
+		<a href="img/04.jpg" title="Title anchor"><img src="img/04.jpg" alt="Alternative Img Attribute"></a>
+		<a href="img/05.jpg" title="Title anchor"><img src="img/05.jpg" alt="Alternative Img Attribute"></a>
+		<a href="img/06.jpg" title="Title anchor"><img src="img/06.jpg" alt="Alternative Img Attribute"></a>
+	</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="simple-lightbox.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){  
+	
+		var lightbox = $('.wrap a').simpleLightbox({
+			// animationSlide: false,
+			animationSpeed: 100,
+			overlay: true,
+			captions: true,
+			captionSelector: 'self',
+			captionDelay: 300,
+			showCounter: false,
+		});
+	
+	});  //end document ready
+</script>
+</body>
+</html>
