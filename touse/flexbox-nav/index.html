@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox Nav</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		#nav-wrap {
+			width: 100%;
+			background: #744e2e;
+			color: #FFF;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		#nav-center {
+			max-width: 800px;
+			margin: 0 auto;
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		#nav-center a {
+			color: #FFF;
+			text-decoration: none;
+			padding: 10px 20px;
+		}
+
+		#logo {
+			background: red;
+		}
+
+		#nav {
+			background: #000;
+			text-align: right;
+			display: flex;
+		}
+
+		#menu-icon {display: none;}
+
+		@media screen and (max-width: 640px) {
+
+			#nav-center {
+				flex-direction: column;
+			}
+		
+			#nav {
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+			}
+
+			#menu-icon {
+				display: block;
+				position: absolute;
+				right: 5px;
+				top: 2px;
+				font-weight: bold;
+			}
+		
+		} /* 640px media end */
+
+
+	</style>
+</head>
+<body>
+
+	<div id="nav-wrap">
+		<div id="nav-center">
+			<div id="logo"><a href="#!">Logo</a></div>
+			<div id="menu-icon">X</div>
+			<div id="nav">
+				<a href="#!">Home</a>
+				<a href="#!">Services</a>
+				<a href="#!">Products</a>
+				<a href="#!">Portfolio</a>
+				<a href="#!">Contact</a>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
