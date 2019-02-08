@@ -5,6 +5,17 @@
 ### HTML
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flexbox Nav</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" media="screen" href="nav.css">
+</head>
+<body>
+
 <section id="top-header">
 	<div class="centered">
 
@@ -27,6 +38,20 @@
 
 	</div><!-- centered -->
 </section><!-- #top-header -->
+	
+<script type="text/javascript">
+	let topNav = document.getElementById('menu'); // ul#menu
+	let menuIcon = document.getElementById('nav-icon'); // #nav-icon
+	menuIcon.addEventListener('click', function(){
+		// ul#menu add class .menu-active [ul#menu.menu-active]
+		topNav.classList.toggle('menu-active');
+		// change menu icon from menu-bars.svg to menu-close.svg (in CSS background)
+		menuIcon.classList.toggle('menu-close');
+	});
+</script>
+
+</body>
+</html>	
 ```
 ### JS
 
@@ -43,7 +68,7 @@
 </script>
 ```
 
-### CSS
+### CSS (nav.css)
 
 ```css
 /* Navigation Flexbox */
