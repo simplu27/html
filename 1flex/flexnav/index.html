@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flexbox Nav</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" media="screen" href="nav.css">
+</head>
+<body>
+
+<section id="top-header">
+	<div class="centered">
+
+		<nav id="nav">
+
+			<div id="logo">Flexbox Nav</div>
+
+			<!-- Toggle with class .menu-close -->
+			<div id="nav-icon"></div> 
+
+			<ul id="menu">
+				<li><a href="#!">Home</a></li>
+				<li><a class="active-link" href="#!">Portfolio</a></li>
+				<li><a href="#!">Blog</a></li>
+				<li><a href="#!">Services</a></li>
+				<li><a href="#!">Contact</a></li>
+			</ul>
+
+		</nav><!-- #nav -->
+
+	</div><!-- centered -->
+</section><!-- #top-header -->
+
+<script type="text/javascript">
+	let topNav = document.getElementById('menu'); // ul#menu
+	let menuIcon = document.getElementById('nav-icon'); // #nav-icon
+
+	menuIcon.addEventListener('click', function(){
+		// ul#menu add class .menu-active [ul#menu.menu-active]
+		topNav.classList.toggle('menu-active');
+		// change menu icon from menu-bars.svg to menu-close.svg (in CSS background)
+		menuIcon.classList.toggle('menu-close');
+	});
+</script>
+
+<!-- 
+SVG Icons:
+
+menu-bars.svg
+
+	<?xml version="1.0" encoding="iso-8859-1"?>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Two-Tone" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="60px" height="60px">
+	<line style="fill:none;stroke:#333333;stroke-width:3;stroke-miterlimit:10;" x1="2" y1="12" x2="22" y2="12"/>
+	<line style="fill:none;stroke:#333333;stroke-width:3;stroke-miterlimit:10;" x1="2" y1="6" x2="22" y2="6"/>
+	<line style="fill:none;stroke:#333333;stroke-width:3;stroke-miterlimit:10;" x1="2" y1="18" x2="22" y2="18"/>
+	</svg>
+
+menu-close.svg
+
+	<?xml version="1.0" encoding="iso-8859-1"?>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="60px" height="60px">
+	<g id="Outlined">
+		<line style="fill:none;stroke:#333333;stroke-width:4;stroke-miterlimit:10;" x1="4" y1="4" x2="20" y2="20"/>
+		<line style="fill:none;stroke:#333333;stroke-width:4;stroke-miterlimit:10;" x1="20" y1="4" x2="4" y2="20"/>
+	</g>
+	</svg>
+
+END SVG Icons
+ -->
+
+</body>
+</html>
