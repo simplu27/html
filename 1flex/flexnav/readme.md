@@ -1,6 +1,6 @@
 # Flexbox Responsive Navigation
 
-[Flexbox Responsive Navigation](https://simplu27.github.io/htmlx/1flex/flexnav)
+[Flexbox Responsive Navigation](https://suiramus.github.io/htmlx/1flex/flexnav)
 
 ### HTML
 
