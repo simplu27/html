@@ -7,3 +7,6 @@ HTML Stuff testing
 
 ### Feight CSS Template
 [Feight CSS](https://suiramus.github.io/htmlx/feight/)
+
+### Add class to nav bar on scroll
+[Nav Scroll Demo](https://suiramus.github.io/htmlx/nav-scroll/)
