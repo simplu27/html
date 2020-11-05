@@ -10,3 +10,9 @@ HTML Stuff testing
 
 ### Add class to nav bar on scroll
 [Nav Scroll Demo](https://suiramus.github.io/htmlx/nav-scroll/)
+
+### Marunit: simple grid system
+[Marunit demo](https://suiramus.github.io/htmlx/marunit/)
+
+### Hero Image
+[Hero image demo](https://suiramus.github.io/htmlx/heroimage/)
