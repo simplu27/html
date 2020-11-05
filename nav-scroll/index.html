@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Add class on scroll</title>
+<!-- https://gist.github.com/ohiosveryown/93015ccc1f43437db6169dbfb18196fa -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="style.css">
+<style>
+
+* {
+	box-sizing: border-box;
+}
+
+  body {
+  	min-height: 200vh;
+  	margin: 0;
+  	padding: 0;
+  	font-size: 18px;
+  	font-family: Arial, sans-serif;
+  	line-height: 1.4;
+  }
+
+  nav {
+    --ease: all 300ms ease;
+    position: fixed;
+    background: rgba(250, 250, 250, .1);
+    width: 100%;
+    /*opacity: 0.2;*/
+    transition: var(--ease);
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav a {
+  	display: inline-block;
+  	text-decoration: none;
+  	padding: 20px 8px;
+  	color: #FFF;
+  	font-size: 18px;
+  }
+
+  nav.scrolly {
+  	background: rgba(250, 150, 0, .9);
+  	padding: 10px 20px;
+  }
+
+  nav.scrolly a {
+  	/*color: #333;*/
+  }
+
+  .hero {
+  	min-height: 100vh;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	color: #FFF;
+  	padding: 20px;
+  	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('hero.jpg');
+  	background-size: cover;
+  }
+
+  	.hero-container {
+  		max-width: 900px;
+  		text-align: center;
+  	}
+
+
+</style>
+</head>
+<body>
+
+	<header>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">Products</a>
+			<a href="#">Services</a>
+			<a href="#">Contact</a>
+		</nav>
+	</header>
+
+	<section class="hero">
+		<div class="hero-container">
+			<h1>Something</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</section>
+
+	
+	<script>
+	  let scrollpos = window.scrollY;
+	  const header = document.querySelector("nav");
+	  const header_height = header.offsetHeight;
+
+	  const add_class_on_scroll = () => header.classList.add("scrolly");
+	  const remove_class_on_scroll = () => header.classList.remove("scrolly");
+
+	  window.addEventListener('scroll', function() { 
+	    scrollpos = window.scrollY;
+
+	    if (scrollpos >= header_height) { add_class_on_scroll() }
+	    else { remove_class_on_scroll() }
+
+	    console.log(scrollpos);
+	  });
+	</script>
+
+
+</body>
+</html>

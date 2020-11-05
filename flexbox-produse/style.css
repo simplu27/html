@@ -6,7 +6,7 @@
 }
 
 .center {
-	max-width: 800px;
+	max-width: 900px;
 	margin: 20px auto;
 	font-family: Arial, sans-serif;
 	font-size: 16px;
@@ -35,6 +35,30 @@ ul.lista-produse li {
 	border: 1px solid rgba(0,0,0,.09);
 	border-radius: 6px;
 }
+
+@media screen and (max-width: 800px) {
+
+	.lista-produse li {
+		flex-basis: 48%;
+		max-width: 48%;
+		margin: 1%;
+		border: 1px solid rgba(0,0,0,.09);
+		border-radius: 6px;
+	}
+
+} /* 800px media end */
+
+@media screen and (max-width: 480px) {
+
+	.lista-produse li {
+		flex-basis: 98%;
+		max-width: 98%;
+		margin: 1%;
+		border: 1px solid rgba(0,0,0,.09);
+		border-radius: 6px;
+	}
+
+} /* 450px media end */
 
 .lista-produse li {
 	display: flex;
