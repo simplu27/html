@@ -24,29 +24,33 @@
   nav {
     --ease: all 300ms ease;
     position: fixed;
-    background: rgba(250, 250, 250, .1);
+    /*background: rgba(250, 250, 250, .1);*/
     width: 100%;
     /*opacity: 0.2;*/
-    transition: var(--ease);
+    /*transition: var(--ease);*/
+    transition: all .5s ease-in-out;
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
   }
 
   nav a {
   	display: inline-block;
   	text-decoration: none;
-  	padding: 20px 8px;
+  	padding: 10px;
   	color: #FFF;
   	font-size: 18px;
+    text-transform: uppercase;
   }
 
   nav.scrolly {
-  	background: rgba(250, 150, 0, .9);
-  	padding: 10px 20px;
+  	/*background: rgba(250, 150, 0, 1);*/
+    background: #FDFDFD;
+    padding: 10px 20px;
+    box-shadow: 15px 0 30px rgba(0,0,0,.1);
   }
 
   nav.scrolly a {
-  	/*color: #333;*/
+  	color: #333;
   }
 
   .hero {
@@ -56,14 +60,20 @@
   	align-items: center;
   	color: #FFF;
   	padding: 20px;
-  	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('hero.jpg');
+  	background-image: linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0, 0.3)), linear-gradient(90deg, rgba(120, 0, 0, .6),rgba(0, 0, 120, 0.3)), url('hero.jpg');
   	background-size: cover;
+    background-attachment: fixed;
   }
 
   	.hero-container {
   		max-width: 900px;
   		text-align: center;
   	}
+
+    .hero-container h1 {
+      font-size: 80px;
+      line-height: 1.1;
+    }
 
 
 </style>
@@ -81,7 +91,7 @@
 
 	<section class="hero">
 		<div class="hero-container">
-			<h1>Something</h1>
+			<h1>SCROLL ME</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
@@ -89,7 +99,7 @@
 
 	
 	<script>
-	  let scrollpos = window.scrollY;
+	  // let scrollpos = window.scrollY;
 	  const header = document.querySelector("nav");
 	  const header_height = header.offsetHeight;
 
